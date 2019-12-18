@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on 学习心得</title>
+    <link>https://wrongcodes.github.io/blog/posts/</link>
+    <description>Recent content in Posts on 学习心得</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 17 Dec 2019 18:53:26 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wrongcodes.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>【学习笔记】用Hugo建站来写个人博客 Day1</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://wrongcodes.github.io/blog/posts/my-first-post/</link>
       <pubDate>Tue, 17 Dec 2019 18:53:26 +0900</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://wrongcodes.github.io/blog/posts/my-first-post/</guid>
       <description>缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
 通过一番考察我选择利用Hugo建立静态网站的方法。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
 安装和一键建站 这里我主要参考官网的Quick Start。
