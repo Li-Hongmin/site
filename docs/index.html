@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
-
+<meta property="og:updated_time" content="2019-12-17T18:53:26+09:00" />
 <meta itemprop="name" content="My New Hugo Site">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My New Hugo Site"/>
@@ -95,6 +95,62 @@
   
   
   
+  
+    
+    
+
+    <div class="pa3 pa4-ns w-100 w-70-ns center">
+      
+       
+          <h1 class="flex-none">
+            Recent Posts
+          </h1>
+        
+
+      
+
+      <section class="w-100 mw8">
+        
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://example.org/posts/my-first-post/" class="color-inherit dim link">
+            【学习笔记】用Hugo建站来写个人博客 Day1
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
+通过一番考察我选择利用Hugo建立静态网站的方法。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
+安装和一键建站 这里我主要参考官网的Quick Start。
+ 安装 Hugo 我的环境时macOS，使用Homebrew安装：  brew install hugo hugo version 最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。
+另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。
+如果是Windows或linux用户的话参考这里进行安装。
+一键建站  在terminal或命令行里找个合适的文件路径，执行以下命令。
+hugo new site yourFolderName 这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。
+添加主题  主题是Hugo的一大优势，海量主题任你选。这里是主题库。
+我们这里就用官方教程里的Ananke。
+cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github.
+        </div>
+          <a href="http://example.org/posts/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+      </section>
+
+      
+
+      </div>
   
 
     </main>
