@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-chs">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>学习笔记  | 【学习笔记】用Hugo建站来写个人博客 Day1</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.61.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/blog/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="【学习笔记】用Hugo建站来写个人博客 Day1" />
+<meta property="og:description" content="缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
+通过一番考察我选择利用Hugo建立静态网站的方法。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
+安装和一键建站 这里我主要参考官网的Quick Start。
+ 安装 Hugo 我的环境时macOS，使用Homebrew安装：  brew install hugo hugo version 最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。
+另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。
+如果是Windows或linux用户的话参考这里进行安装。
+一键建站  在terminal或命令行里找个合适的文件路径，执行以下命令。
+hugo new site yourFolderName 这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。
+添加主题  主题是Hugo的一大优势，海量主题任你选。这里是主题库。
+我们这里就用官方教程里的Ananke。
+cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wrongcodes.github.io/blog/posts/my-first-post/" />
+<meta property="article:published_time" content="2019-12-17T18:53:26+09:00" />
+<meta property="article:modified_time" content="2019-12-17T18:53:26+09:00" />
+<meta itemprop="name" content="【学习笔记】用Hugo建站来写个人博客 Day1">
+<meta itemprop="description" content="缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
+通过一番考察我选择利用Hugo建立静态网站的方法。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
+安装和一键建站 这里我主要参考官网的Quick Start。
+ 安装 Hugo 我的环境时macOS，使用Homebrew安装：  brew install hugo hugo version 最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。
+另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。
+如果是Windows或linux用户的话参考这里进行安装。
+一键建站  在terminal或命令行里找个合适的文件路径，执行以下命令。
+hugo new site yourFolderName 这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。
+添加主题  主题是Hugo的一大优势，海量主题任你选。这里是主题库。
+我们这里就用官方教程里的Ananke。
+cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github.">
+<meta itemprop="datePublished" content="2019-12-17T18:53:26&#43;09:00" />
+<meta itemprop="dateModified" content="2019-12-17T18:53:26&#43;09:00" />
+<meta itemprop="wordCount" content="170">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【学习笔记】用Hugo建站来写个人博客 Day1"/>
+<meta name="twitter:description" content="缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
+通过一番考察我选择利用Hugo建立静态网站的方法。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
+安装和一键建站 这里我主要参考官网的Quick Start。
+ 安装 Hugo 我的环境时macOS，使用Homebrew安装：  brew install hugo hugo version 最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。
+另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。
+如果是Windows或linux用户的话参考这里进行安装。
+一键建站  在terminal或命令行里找个合适的文件路径，执行以下命令。
+hugo new site yourFolderName 这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。
+添加主题  主题是Hugo的一大优势，海量主题任你选。这里是主题库。
+我们这里就用官方教程里的Ananke。
+cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://wrongcodes.github.io/blog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      学习笔记
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">【学习笔记】用Hugo建站来写个人博客 Day1</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-17T18:53:26&#43;09:00">December 17, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="heading">缘起</h1>
+<p>我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。
+我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。</p>
+<p>通过一番考察我选择利用<a href="gohugo.io">Hugo</a>建立静态网站的方法。
+详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。
+同时在过程中把自己的心得分享出来供后来者参考。</p>
+<h1 id="heading-1">安装和一键建站</h1>
+<p>这里我主要参考官网的<a href="https://gohugo.io/getting-started/quick-start/">Quick Start</a>。</p>
+<ol>
+<li>安装 Hugo
+我的环境时macOS，使用Homebrew安装：</li>
+</ol>
+<pre><code class="language-terminal" data-lang="terminal">brew install hugo
+hugo version
+</code></pre><p>最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。</p>
+<p>另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。</p>
+<p>如果是Windows或linux用户的话参考<a href="https://gohugo.io/getting-started/installing">这里</a>进行安装。</p>
+<ol start="2">
+<li>一键建站</li>
+</ol>
+<p>在terminal或命令行里找个合适的文件路径，执行以下命令。</p>
+<pre><code class="language-terminal" data-lang="terminal">hugo new site yourFolderName
+</code></pre><p>这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。</p>
+<ol start="3">
+<li>添加主题</li>
+</ol>
+<p>主题是Hugo的一大优势，海量主题任你选。这里是<a href="https://themes.gohugo.io/">主题库</a>。</p>
+<p>我们这里就用官方教程里的Ananke。</p>
+<pre><code class="language-terminal" data-lang="terminal">cd quickstart
+
+# Download the theme
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+# Note for non-git users:
+#   - If you do not have git installed, you can download the archive of the latest
+#     version of this theme from:
+#       https://github.com/budparr/gohugo-theme-ananke/archive/master.zip
+#   - Extract that .zip file to get a &quot;gohugo-theme-ananke-master&quot; directory.
+#   - Rename that directory to &quot;ananke&quot;, and move it into the &quot;themes/&quot; directory.
+# End of note for non-git users.
+
+# Edit your config.toml configuration file
+# and add the Ananke theme.
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre><ol start="4">
+<li>添加页面</li>
+</ol>
+<p>生成第一个页面。</p>
+<pre><code class="language-terminal" data-lang="terminal">hugo new posts/my-first-post.md
+</code></pre><p>第一个页面看起来像这样：</p>
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2019-03-26T08:47:11+01:00
+draft: true
+---
+</code></pre><p>可以用你喜欢的IDE来写markdown文件，直接就可以生成网站了。</p>
+<ol start="5">
+<li>运行Hugo服务器</li>
+</ol>
+<p>终于到来一键生成网站的时候了，虽然这里的一键是一行命令。</p>
+<pre><code class="language-terminal" data-lang="terminal">hugo server -D
+</code></pre><p>最后提示</p>
+<pre><code>Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre><p>浏览器打开<a href="http://localhost:1313/">http://localhost:1313/</a>看看是不是成功了。</p>
+<h1 id="heading-2">总结</h1>
+<p>简单易学，一行命令完事。</p>
+<p>建站大坑，容我慢慢来填。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://wrongcodes.github.io/blog/" >
+    &copy; 2019 学习笔记
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/blog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
