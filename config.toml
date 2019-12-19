@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://wrongcodes.github.io/blog"
+languageCode = "zh-CN"
+title = "学习心得"
 theme = "ananke"
 publishDir = "docs"
