@@ -1,5 +1,12 @@
-baseURL = "https://wrongcodes.github.io/blog"
-languageCode = "zh-CN"
-title = "学习心得"
-theme = "ananke"
+# Academic Website Builder
+# https://sourcethemes.com/academic/
+#
+# The presence of this file is for compatibility with Blogdown and Forestry.
+# If you are not using those tools, this file may be deleted.
+#
+# The actual configuration files are stored in the `config/_default/` folder.
+baseURL = "https://wrongcodes.github.io"
+languageCode = "En"
+# title = "学习心得"
+theme = "academic"
 publishDir = "docs"

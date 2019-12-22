@@ -1,35 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>学习心得</title>
-    <link>https://wrongcodes.github.io/blog/</link>
-    <description>Recent content on 学习心得</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Dec 2019 18:53:26 +0900</lastBuildDate>
-    
-	<atom:link href="https://wrongcodes.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>【学习笔记】用Hugo建站来写个人博客 Day1</title>
-      <link>https://wrongcodes.github.io/blog/posts/my-first-post/</link>
-      <pubDate>Tue, 17 Dec 2019 18:53:26 +0900</pubDate>
-      
-      <guid>https://wrongcodes.github.io/blog/posts/my-first-post/</guid>
-      <description>建站一直是一个很复杂的工程，不过总有捷径。本文介绍一种快速建立静态网站的工具hugo。hugo是基于go语言新兴静态网站生成工具，非常快速轻便。我们只需要用markdown来写博客直接生成网页，可以让我们专注于内容。另外有超多主题可供选择，换个装潢模版也很容易。
-缘起 我目前在读Ph.D平时读论文时会做一些笔记，一直想把这些笔记整理分享出来。 我于是开始尝试使用个人博客来记录学习过程整理思路，之后还能做一些页面展示研究成果。
-通过一番考察我选择先用Hugo建立一个网站。 详细Hugo是什么请读者自行了解，我理解就是go语言写的快捷建站工具，并且只要用markdown语言就可以写页面了。 同时在过程中把自己的心得分享出来供后来者参考。
-安装和一键建站 这里我主要参考官网的Quick Start。
- 安装 Hugo 我的环境时macOS，使用Homebrew安装：  brew install hugo hugo version 最后得到这样的信息：Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown。
-另外说Homebrew是一个非常好的软件管理软件，一行代码就安装好了，如果还没有试过的人一定要尝试一下。
-如果是Windows或linux用户的话参考这里进行安装。
-一键建站  在terminal或命令行里找个合适的文件路径，执行以下命令。
-hugo new site yourFolderName 这时Hugo会生成一个网站模版。命令中_yourFolderName_就是文件夹名，可以随便起。
-添加主题  主题是Hugo的一大优势，海量主题任你选。这里是主题库。
-我们这里就用官方教程里的Ananke。
-cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github.</description>
-    </item>
+    <title>Academic</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Academic</title>
+      <link>/</link>
+    </image>
     
   </channel>
 </rss>
